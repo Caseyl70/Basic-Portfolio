@@ -141,7 +141,7 @@ h2 {
 }
 
 
-/* portfolio page */
+/* portfolio   */
 
 .work {
     position: relative;
@@ -165,7 +165,7 @@ h3 {
     margin-bottom: 0;
     font-weight: 300;
     line-height: 30px;
-    color: azure;
+    color: black;
     text-align: center;
     background: grey;
     border-bottom: 0;
