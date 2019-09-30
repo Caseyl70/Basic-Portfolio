@@ -1,13 +1,27 @@
-.container {
-    width: 100%;
-    max-width: 960px;
-    margin: 0 auto;
-}
+/* MAIN PAGE SLASH MAIN CSS */
 
 * {
     box-sizing: border-box;
 }
 
+.container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    clear: both;
+}
+
+body {
+    font-family: fantasy;
+    font-size: 18px;
+    line-height: 34px;
+    color: black;
+    background: grey;
+}
+
+h1,
+h2,
+h3,
 p {
     margin-bottom: 20px;
 }
@@ -15,117 +29,233 @@ p {
 h1,
 h2,
 h3 {
-    font-family: Georgia, Times, "Times New Roman", serif;
-    color: #4aaaa5;
-    margin-bottom: 20px;
+    font-family: fantasy;
+    font-weight: 700;
+    color: black;
 }
 
 h1 {
-    padding: 20px;
+    padding-bottom: 20px;
+    font-size: 40px;
     line-height: 49px;
-    border-bottom: 3px solid #dddddd;
-    margin-bottom: 20px;
+    border-bottom: 3px solid black;
 }
 
-h1 h2,
+h2,
 h3 {
-    padding: 20px;
-    line-height: 49px;
-    border-bottom: 3px solid #dddddd;
-    margin-bottom: 20px;
+    font-size: 22px;
 }
 
-#headbar {
+p:last-child {
+    margin-bottom: 0;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* header */
+
+#masthead {
     position: fixed;
     z-index: 99;
     width: 100%;
     margin: 0 0 30px;
     overflow: auto;
-    color: #ffffff;
-    background: #ffffff;
-    border-bottom: 2px solid #cccccc;
+    color: grey;
+    background: azure;
+    border-bottom: 2px solid black;
+}
+
+#logo {
+    float: left;
+    width: 250px;
+    height: 90px;
+    font-family: fantasy;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 90px;
+    color: black;
+    text-align: center;
+    background: grey;
 }
 
 nav {
     float: right;
     margin-top: 25px;
+}
+
+nav a {
     display: inline-block;
     padding-left: 15px;
     margin-left: 15px;
     line-height: 18px;
-    color: #999;
-    border-left: 1px #efefef;
+    color: black;
+    text-decoration: none;
+    border-left: 1px solid black;
 }
+
+nav a:first-child {
+    border-left: 0 none;
+}
+
+
+/* footer */
 
 footer {
     padding: 30px 0;
     clear: both;
     font-size: 12px;
-    color: #ffffff;
-    color: #cccccc;
+    color: grey;
+    color: grey;
     text-align: center;
     background: #666666;
-    border-top: 8px solid #4aaaa5;
+    border-top: 8px solid black;
     height: 50px;
 }
 
-#container {
+h3,
+h2 {
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+    line-height: 22px;
+    border-bottom: 2px solid grey;
+}
+
+
+/* main */
+
+#main-container {
     padding-top: 130px;
     min-height: calc(100vh - 70px);
 }
 
-section {
+.main-section {
     float: left;
     width: 100%;
     max-width: 960px;
     padding: 30px;
     margin: 0 0 40px;
-    background: #ffffff;
-    border: 1px solid #dddddd;
+    background: azure;
+    border: 1px solid black;
 }
 
 
-}
-.jpeg {
-    width: 20px;
-    border: 0;
+/* portfolio page */
+
+.work {
+    position: relative;
+    float: left;
+    width: 274px;
+    margin: 20px 0 25px;
+    overflow: auto;
 }
 
+img {
+    width: 100%;
+    border: 0 none;
+    opacity: 0.8;
 }
-ul {
+
+h3 {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 0;
+    font-weight: 300;
+    line-height: 30px;
+    color: azure;
+    text-align: center;
+    background: grey;
+    border-bottom: 0;
+}
+
+.auth-image {
+    float: left;
+    width: 200px;
+    height: auto;
+    margin-top: 10px;
+    margin-right: 25px;
+}
+
+
+/* contact page */
+
+#contact-form ul {
     margin-bottom: 20px;
 }
-li {
+
+#contact-form li {
     margin-bottom: 10px;
 }
+
 label,
 input[type=text],
 input[type=email],
 textarea {
     display: block;
     width: 100%;
+}
+
+input[type=text],
+input[type=email],
+textarea {
     height: 35px;
     padding: 0 10px;
     font-size: 14px;
-    border: 1px #dddddd;
+    border: 1px solid black;
 }
-input[type=submit] {
-    padding: 10px 30px;
-    font-size: 18px;
-    color: #ffffff;
-    background: #4aaaa5;
-    border: 0;
-}
+
 textarea {
     height: 200px;
 }
-body {
-    font-family: Arial,
-    "Helvetica Neue",
-    Helvetica,
-    sans-serif;
+
+input[type=submit] {
+    padding: 10px 30px;
     font-size: 18px;
-    line-height: 34px;
-    color: #777777;
-    background: url("../images/concrete_seamless.png");
+    color: azure;
+    cursor: pointer;
+    background: grey;
+    border: 0 none;
+}
+
+@media only screen and (min-width: 768px) {
+    .col-1 {
+        width: 8.33%;
+    }
+    .col-2 {
+        width: 16.66%;
+    }
+    .col-3 {
+        width: 25%;
+    }
+    .col-4 {
+        width: 33.33%;
+    }
+    .col-5 {
+        width: 41.66%;
+    }
+    .col-6 {
+        width: 50%;
+    }
+    .col-7 {
+        width: 58.33%;
+    }
+    .col-8 {
+        width: 66.66%;
+    }
+    .col-9 {
+        width: 75%;
+    }
+    .col-10 {
+        width: 83.33%;
+    }
+    .col-11 {
+        width: 91.66%;
+    }
+    .col-12 {
+        width: 100%;
+    }
 }
