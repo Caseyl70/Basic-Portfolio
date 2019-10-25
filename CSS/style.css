@@ -95,14 +95,13 @@ nav a {
 /* footer */
 
 footer {
-    padding: 30px 0;
-    clear: both;
-    font-size: 12px;
-    color: azure;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
     text-align: center;
-    background: #666666;
-    border-top: 8px solid;
-    height: 50px;
+    color: white;
+    margin-bottom: 0px;
+    background-color: grey;
 }
 
 h3,
